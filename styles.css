@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1a0327;
+    font-family: 'Poppins', sans-serif;
+    height: 350vh;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image:  url('b.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Define the typewriter animation for the heading */
+.typewriter-text {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    background:rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 300px;
+    height: 10vh;
+    background: #550381;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0% 100%);
+    padding: 10px;
+    line-height: 1.3rem;
+}
+
+.logo p {
+    width: 130px;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.logo .fas {
+    font-size: 50px;
+}
+
+ul.navbar {
+    display: flex;
+    list-style: none;
+}
+
+ul.navbar li {
+    width: 120px;
+}
+
+ul.navbar li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+ul.navbar li a.active {
+    color: #FEC53A;
+}
+
+ul.navbar li a:hover:not(.active) {
+    color: #FEC53A;
+}
+
+#btn {
+    width: 250px;
+    height: 10vh;
+    background: #FEC53A;
+    color: #000;
+    outline: none;
+    border: none;
+    clip-path: polygon(35% 0, 100% 0, 100% 100%, 0% 100%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 40px;
+}
+
+#btn .fas {
+    margin-right: 10px;
+}
+
+/* Content desc starts here */
+.content-wrapper {
+    width: 80%;
+    min-height: 80vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.content-desc h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.content-desc p {
+    width: 550px;
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 10px;
+}
+
+.content-desc span {
+    color: #FEC53A;
+}
+
+#btn2 {
+    width: 350px;
+    height: 10vh;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+    background: #FEC53A;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 15px;
+    clip-path: polygon(0 0, 65% 0, 95% 100%, 0% 100%);
+    text-align: left;
+}
+
+.rakuto {
+    width: 400px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.rakuto::before {
+    content: '';
+    width: 160px;
+    height: 160px;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    top: 10px;
+    left: 200px;
+}
+
+.rakuto::after {
+    content: '';
+    width: 450px;
+    height: 400px;
+    background: url(../PHOTOS/IMG2.jpg);
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    bottom: 0px;
+    left: -150px;
+    margin-left: 90px;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.logo-section .fas {
+    font-size: 6rem;
+    color: #FEC53A;
+}
+
+.logo-section h1 {
+    width: 250px;
+    font-size: 2rem;
+    color: #FEC53A;
+    margin-left: 10px;
+}
+
+/* Section one starts here */
+.section-1 {
+    width: 100%;
+    height: 100vh;
+    background-image:url('back.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-1-wrapper {
+    width: 70%;
+    margin: auto;
+}
+
+.section-1 h1 {
+    width: 500px;
+    color: #FEC53A;
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 400;
+}
+
+.section-1-img {
+    display: flex;
+}
+
+.section-1-img .img {
+    width: 100px;
+    height: 130px;
+    background-image: url("PHOTOS/VOTE1.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.section-1-img .img-2 {
+    background: url("PHOTOS/VOTE.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1-img .img-3 {
+    background: url("PHOTOS/EDU.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.section-1-img  .img-4{
+    background: url("PHOTOS/EQUALITY.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.section-1-img  .img-5{
+    background: url("PHOTOS/LABOUR.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.img:hover {
+    transform: translateY(-10px);
+}
+
+/* Style the trigger button (IMG1 or button element) */
+.IMG1 {
+    cursor: pointer; /* Set cursor to pointer on hover */
+}
+
+
+/* Section 3 starts here */
+.game-categories {
+    width: 70%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.game-categories h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #FEC53A;
+}
+
+.game-wrapper {
+    display: flex;
+}
+
+.gw-1 {
+    width: 120px;
+    height: 120px;
+    background: url("QUI.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px;
+}
+.gw-2 {
+    width: 120px;
+    height: 120px;
+    background: url("PHOTOS/MM.png");
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px;
+}
+
+.gw-3 {
+    width: 120px;
+    height: 120px;
+    background: url("PHOTOS/CROSS.webp");
+    background-size: cover;
+    background-position: center;
+    margin: 20px 15px;
+}
+
+.content-slider {
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    padding-bottom: 20px;
+    scroll-behavior: smooth;
+}
+
+.slide {
+    min-width: 300px;
+    height: 200px;
+    background: url(../PHOTOS/battlefield.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-right: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    flex: none;
+}
+
+.slide:hover {
+    transform: translateY(-10px);
+}
+
+.slide .slide-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    position: relative;
+    top: 150px;
+    padding-left: 10px;
+}
+
+/* Content slider ends here */
+
+h1 {
+    color: #FEC53A;
+}
+.section-2{
+    width: 100%;
+    height: 50vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.767),rgba(0, 0, 0, 0.712)),
+    url(../images/flame.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.section-2 h1{
+    font-size: 2rem;
+    color: #fff;
+    margin: 20px 0;
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.p-image{
+    width: 200px;
+    height: 200px;
+    background: url(../PHOTOS/VOTE.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    position: relative;
+}
+.p-image-1::after{
+    content: 'VS';
+    position: absolute;
+    right: -35px;
+    bottom: 0;
+    font-size: 2rem;
+    color: #FEC53A;
+}
+.players span{
+    font-size: 1.5rem;
+    color: #FEC53A;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.stars{
+    color: #FEC53A;
+}
+.p-image-2{
+    background: url(../PHOTOS/EDU.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.p-image-2{
+    background: url(../PHOTOS/EQUALITY.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.p-image-3::after{
+    content: 'VS';
+    position: absolute;
+    right: -35px;
+    bottom: 0;
+    font-size: 2rem;
+    color: #FEC53A;
+}
+.p-image-4{
+    background: url(../PHOTOS/LABOUR.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section 3 starts here */
+.section-3 {
+    height: 100vh;
+    width: 100%;
+    background: #2b2b2b;
+    padding: 50px 0; /* Add some padding for better spacing */
+    color: #fff; /* Ensure text color is white */
+}
+
+.section-3 h1 {
+    text-align: center; /* Center-align the heading */
+    margin-bottom: 40px; /* Add some margin below the heading */
+}
+
+.section-3-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping if content overflows */
+    justify-content: center; /* Center-align the feedback elements */
+    gap: 20px; /* Add some space between feedback elements */
+    padding: 0 20px; /* Add padding to the sides */
+}
+
+.feedback {
+    width: 300px; /* Set a fixed width for feedback elements */
+    height: 300px; /* Set a fixed height for feedback elements */
+    background: #444; /* Add a background color for visibility */
+    margin-bottom: 20px; /* Add some margin to the bottom */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    overflow: hidden; /* Ensure content does not overflow */
+    position: relative; /* Set position to relative for positioning child elements */
+}
+
+.feedback-desc {
+    width: 300px; /* Set the same width as the feedback element */
+    height: auto; /* Let the height adjust according to the content */
+    background: #555; /* Add a background color for visibility */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Add border-radius for rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Add a shadow for a 3D effect */
+    color: #fff; /* Ensure text color is white */
+}
+
+.feedback-desc p {
+    font-size: 0.9rem; /* Adjust font size for better readability */
+    line-height: 1.5rem; /* Adjust line height for better spacing */
+    margin-bottom: 20px; /* Add margin below the text */
+}
+
+.feedback-desc h4 {
+    text-align: right; /* Right-align the name */
+    font-size: 1rem; /* Adjust font size for better visibility */
+    margin-top: 10px; /* Add margin above the name */
+}
+
+.fas, .far {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #FEC53A; /* Ensure icon color matches the theme */
+    margin-bottom: 10px; /* Add margin below the icon */
+}
+
+.section-3 {
+    padding: 50px 0;
+    color: #fff; /* Text color */
+}
+
+.section-3 h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-3-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.feedback {
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background for feedback boxes */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    width: 100%;
+}
+
+.feedback-desc {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.feedback-desc p {
+    margin-bottom: 10px;
+}
+
+.feedback-desc i {
+    margin-right: 5px;
+}
+
+.feedback-desc h4 {
+    margin: 0;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indian Constitution Quiz</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div id="timer">Time Left: <span id="time">30</span> seconds</div>
+        <button id="start">Start Quiz</button>
+        <div id="quiz" class="hidden">
+            <div class="question" id="question1">
+                <h3>1. When was the Constitution of India adopted?</h3>
+                <label><input type="radio" name="q1" value="1947"> 1947</label><br>
+                <label><input type="radio" name="q1" value="1949"> 1949</label><br>
+                <label><input type="radio" name="q1" value="1950"> 1950</label><br>
+                <label><input type="radio" name="q1" value="1952"> 1952</label><br>
+                <button class="next" data-next="question2">Next</button>
+            </div>
+            <div class="question hidden" id="question2">
+                <h3>2. Who is known as the father of the Indian Constitution?</h3>
+                <label><input type="radio" name="q2" value="Jawaharlal Nehru"> Jawaharlal Nehru</label><br>
+                <label><input type="radio" name="q2" value="B. R. Ambedkar"> B. R. Ambedkar</label><br>
+                <label><input type="radio" name="q2" value="Mahatma Gandhi"> Mahatma Gandhi</label><br>
+                <label><input type="radio" name="q2" value="Sardar Patel"> Sardar Patel</label><br>
+                <button class="next" data-next="question3">Next</button>
+            </div>
+            <div class="question hidden" id="question3">
+                <h3>3. How many articles are there in the Indian Constitution?</h3>
+                <label><input type="radio" name="q3" value="395"> 395</label><br>
+                <label><input type="radio" name="q3" value="448"> 448</label><br>
+                <label><input type="radio" name="q3" value="450"> 450</label><br>
+                <label><input type="radio" name="q3" value="500"> 500</label><br>
+                <button class="next" data-next="question4">Next</button>
+            </div>
+            <div class="question hidden" id="question4">
+                <h3>4. Which part of the Indian Constitution deals with the Directive Principles of State Policy?</h3>
+                <label><input type="radio" name="q4" value="Part III"> Part III</label><br>
+                <label><input type="radio" name="q4" value="Part IV"> Part IV</label><br>
+                <label><input type="radio" name="q4" value="Part V"> Part V</label><br>
+                <label><input type="radio" name="q4" value="Part VI"> Part VI</label><br>
+                <button class="next" data-next="question5">Next</button>
+            </div>
+            <div class="question hidden" id="question5">
+                <h3>5. The Indian Constitution is divided into how many parts?</h3>
+                <label><input type="radio" name="q5" value="20"> 20</label><br>
+                <label><input type="radio" name="q5" value="22"> 22</label><br>
+                <label><input type="radio" name="q5" value="25"> 25</label><br>
+                <label><input type="radio" name="q5" value="30"> 30</label><br>
+                <button id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
